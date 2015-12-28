@@ -1,2 +1,2 @@
-# AutoHotkey_scripts
-My AutoHotkey scripts
+# Pete's useful scripts
+My favorite useful scripts
