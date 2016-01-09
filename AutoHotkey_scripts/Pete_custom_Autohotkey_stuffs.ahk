@@ -427,6 +427,19 @@ Return
   Return
 #IfWinActive; ahk_class chrome.exe
 
+; CS:GO is active
+#IfWinActive, ahk_exe csgo.exe
+; if WinExist("ahk_class Valve001") ;TF2
+; {
+; }
+    
+    ; http://www.pcgamer.com/how-to-disable-the-windows-key/
+    ; Disable Windows key not to accidentally iconize the program while in-game
+    ~LWin Up:: return
+    ~RWin Up:: return
+
+#IfWinActive; ahk_exe csgo.exe
+
 ; *************************************************************************
 ; *************************************************************************
 ; http://stackoverflow.com/questions/98597/best-autohotkey-macros/100648#100648

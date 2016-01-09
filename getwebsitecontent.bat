@@ -1,6 +1,6 @@
 @if (@a==@b) @end /*
 
-:: fetch.bat <url>
+:: getwebsitecontent.bat <url>
 :: fetch a web page
 
 @echo off

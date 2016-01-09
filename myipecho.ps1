@@ -1,0 +1,1 @@
+Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter "IPENABLED=TRUE and DHCPEnabled=True" | Select Description, IPAddress
