@@ -17,6 +17,13 @@ if not A_IsAdmin
 }
 */
 
+; Copy title of the active window to the clipboard in Microsoft Windows
+; https://softwarerecs.stackexchange.com/a/34832/4654
+^!l::
+	WinGetActiveTitle, Title
+	Clipboard = %Title%
+return
+
 ; Toggle AlwaysOnTop property
 ; http://www.autohotkey.com/board/topic/53249-transparent-andor-always-on-top/?p=573906
 ; https://www.autohotkey.com/docs/commands/WinSet.htm
