@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\cmdfile\shell\OpenInCmd]
+@="Open in command prompt"
+"Icon"="C:\\Windows\\System32\\cmd.exe"
+
+[HKEY_CLASSES_ROOT\cmdfile\shell\OpenInCmd\command]
+@="cmd.exe /k \"%1\""
+

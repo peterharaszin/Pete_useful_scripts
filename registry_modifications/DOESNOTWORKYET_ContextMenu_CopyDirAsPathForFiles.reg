@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\CopyDirAsPath]
+"Icon"="%SystemRoot%\\System32\\shell32.dll,-133"
+@="Copy Parent Directory as Path"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\CopyDirAsPath\command]
+@="cmd.exe /c (echo.|set /p=\"%~dp1\") | clip"

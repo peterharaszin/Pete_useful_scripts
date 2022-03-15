@@ -1,0 +1,33 @@
+Windows Registry Editor Version 5.00
+
+; Assumes "D:\Projects\Pete_useful_scripts\cmd_elevate_UAC.bat" exists
+[-HKEY_CLASSES_ROOT\Directory\shell\cmd_admin]
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd_admin]
+@="Open command window here as Administrator"
+"HasLUAShield"=""
+"Icon"="C:\\Windows\\System32\\cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd_admin\command]
+@="D:\\Projects\\Pete_useful_scripts\\cmd_elevate_UAC.bat cmd.exe /s /k pushd \"\"%V\"\""
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\cmd_admin]
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd_admin]
+@="Open command window here as Administrator"
+"HasLUAShield"=""
+"Icon"="C:\\Windows\\System32\\cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd_admin\command]
+@="D:\\Projects\\Pete_useful_scripts\\cmd_elevate_UAC.bat cmd.exe /s /k pushd \"\"%V\"\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\cmd_admin]
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd_admin]
+@="Open command window here as Administrator"
+"HasLUAShield"=""
+"Icon"="C:\\Windows\\System32\\cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd_admin\command]
+@="D:\\Projects\\Pete_useful_scripts\\cmd_elevate_UAC.bat cmd.exe /s /k pushd \"\"%V\"\""
+
